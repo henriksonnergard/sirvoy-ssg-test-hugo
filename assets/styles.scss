@@ -1,0 +1,31 @@
+@import "bulma/bulma.sass";
+
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: #484B4E;
+  min-height: 4rem;
+
+  .navbar-brand img {
+    max-height: 2rem;
+    width: 8rem;
+  }
+  .navbar-item, .navbar-item a, .navbar-link {
+    color: #ffffff;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+  .navbar-link:not(.is-arrowless)::after {
+    border-color: #ffffff;
+  }
+  .navbar-dropdown, .navbar-item.has-dropdown:hover .navbar-link {
+    background: #484B4E;
+  }
+  .navbar-dropdown {
+    border-top: 0;
+  }
+}

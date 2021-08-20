@@ -1,9 +1,39 @@
 <header>
-    <nav class="main-nav">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a href="">
+            <a class="navbar-item" href="">
                 <img src="https://sirvoy.com/wp-content/themes/sirvoy/sirvoywp/sirvoy-logo-rgb-white.svg" alt="Sirvoy">
             </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <ul class="navbar-start">
+               <li class="navbar-item">
+                   <a href="">Features & Pricing</a>
+               </li>
+                <li class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="">Products</a>
+                    <ul class="navbar-dropdown">
+                        <li class="navbar-item">
+                            <a href="">Property Management System</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="">Channel Manager</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="">Booking Engine</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="">Website Builder</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
         <ul>
             <li>
