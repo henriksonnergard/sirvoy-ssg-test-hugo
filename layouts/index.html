@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    {{ $style := resources.Get "styles.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ $sass := resources.Get "styles.scss" }}
+    {{ $styles := $sass | resources.ToCSS | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
     <title>Sirvoy</title>
 </head>
 <body>
     {{ partial "site/site-header" . }}
-    {{ .Content }}
 </body>
 </html>
