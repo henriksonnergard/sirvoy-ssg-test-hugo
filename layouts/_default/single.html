@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {{ $sass := resources.Get "styles.scss" }}
+    {{ $styles := $sass | resources.ToCSS | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
     <title>Sirvoy</title>
 </head>
-<body>
-    {{.Content}}
-    <footer>
-
-    </footer>
+<body class="{{ with .File }}{{ .BaseFileName }}{{ end }}">
+    {{ partial "site/site-header" . }}
+    <main class="content container">
+        <h1>{{ .Title }}</h1>
+        {{.Content}}
+    </main>
 </body>
 </html>

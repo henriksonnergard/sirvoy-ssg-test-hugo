@@ -1,4 +1,14 @@
-<header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    
+    <link rel="stylesheet" href="/styles.c9e1c8b39cbb11d301169c11305343404b73422a69471f5ab1068b5a40a64c5f.css" integrity="sha256-yeHIs5y7EdMBFpwRMFNDQEtzQippRx9asQaLWkCmTF8=">
+    <title>Sirvoy</title>
+</head>
+<body class="my-first-post">
+    <header>
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
@@ -36,14 +46,55 @@
                 <li class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link" href="">Blog</a>
                     <ul class="navbar-dropdown">
-                        {{ range (.GetTerms "tags") }}
+                        
                             <li class="navbar-item">
-                                <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+                                <a href="http://example.org/tags/market/">market</a>
                             </li>
-                        {{ end }}
+                        
+                            <li class="navbar-item">
+                                <a href="http://example.org/tags/covid-19/">covid-19</a>
+                            </li>
+                        
                     </ul>
                 </li>
             </ul>
         </div>
     </nav>
 </header>
+    <main class="content container">
+        <h1>My First Post</h1>
+        <h1 id="here-we-go-trying-out-a-phat-main-heading">Here we go, trying out a phat main heading</h1>
+<h2 id="and-a-sub-heading-would-you-look-at-that">And a sub-heading, would you look at that!</h2>
+<p>This should then be some regular copy in true markdown fashion. I assume at least, it&rsquo;s all a bit new to me. Well, not writing markdown, per se, but this way of creating static site content for a SSG like Hugo. In any case, I think the process of getting Hugo up-and-running on my Linux system was pretty easy. Even with Chocolatey on Windows it was very straight forward.</p>
+<h2 id="stop-table-time">Stop! Table time!</h2>
+<table>
+<thead>
+<tr>
+<th>Heading 1</th>
+<th>Heading 2</th>
+<th>Heading 4</th>
+<th>Heading 5</th>
+<th>Wait, where&rsquo;s heading 3?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data</td>
+<td>More data</td>
+<td>Data</td>
+<td>data</td>
+<td>DATA</td>
+</tr>
+<tr>
+<td>123</td>
+<td>456</td>
+<td>789</td>
+<td>8910</td>
+<td>#ff0000</td>
+</tr>
+</tbody>
+</table>
+
+    </main>
+</body>
+</html>

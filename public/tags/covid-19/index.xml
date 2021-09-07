@@ -6,7 +6,16 @@
     <description>Recent content in covid-19 on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Aug 2021 07:22:00 +0200</lastBuildDate><atom:link href="http://example.org/tags/covid-19/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Aug 2021 16:35:46 +0200</lastBuildDate><atom:link href="http://example.org/tags/covid-19/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://example.org/posts/my-first-post/</link>
+      <pubDate>Thu, 19 Aug 2021 16:35:46 +0200</pubDate>
+      
+      <guid>http://example.org/posts/my-first-post/</guid>
+      <description>Here we go, trying out a phat main heading And a sub-heading, would you look at that! This should then be some regular copy in true markdown fashion. I assume at least, it&amp;rsquo;s all a bit new to me. Well, not writing markdown, per se, but this way of creating static site content for a SSG like Hugo. In any case, I think the process of getting Hugo up-and-running on my Linux system was pretty easy.</description>
+    </item>
+    
     <item>
       <title>Preparing for the Massive Influx of Tourists in 2022</title>
       <link>http://example.org/posts/preparing-for-the-massive-influx-of-tourists-in-2022/</link>

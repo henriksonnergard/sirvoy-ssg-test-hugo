@@ -1,7 +1,7 @@
 ---
 title: "My First Post"
 date: 2021-08-19T16:35:46+02:00
-draft: true
+draft: false
 tags: ["market", "covid-19"]
 ---
 

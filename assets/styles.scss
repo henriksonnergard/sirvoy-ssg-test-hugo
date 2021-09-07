@@ -1,11 +1,25 @@
+@import "bulma.sass"; /* This file contains overrides of Bulma */
 @import "bulma/bulma.sass";
 
 *, *:before, *:after{
   box-sizing: border-box;
 }
 
+/* variables */
+
+/* typography */
+
+.subheading, .content .subheading {
+  display: block;
+  font-size: calc(100%/1.2656);
+  font-weight: 300;
+  margin-top: 0.3em;
+}
+
+/* structure styles */
+
 .navbar {
-  background: #484B4E;
+  background: #2C3644;
   min-height: 4rem;
 
   .navbar-brand img {
@@ -13,7 +27,7 @@
     width: 8rem;
   }
   .navbar-item, .navbar-item a, .navbar-link {
-    color: #ffffff;
+    color: $white;
 
     &:hover, &:focus {
       text-decoration: underline;
@@ -23,9 +37,34 @@
     border-color: #ffffff;
   }
   .navbar-dropdown, .navbar-item.has-dropdown:hover .navbar-link {
-    background: #484B4E;
+    background: #2C3644;
   }
   .navbar-dropdown {
     border-top: 0;
+  }
+}
+
+/* page styles */
+
+/* site-index-main */
+.site-index-main {
+  .hero {
+    background: url("images/channels-ipad-en.jpg");
+    background-size: cover;
+    .hero-body {
+      background-color: #2C3644A1;
+      .title {
+        color: $white;
+      }
+    }
+  }
+  .pms__img {
+    background: url("images/pms-bg-en.png");
+    background-repeat: no-repeat;
+    background-size: auto 90%;
+    position: absolute;
+    height: 90%;
+    right: 0;
+    bottom: 0;
   }
 }
